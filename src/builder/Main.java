@@ -1,12 +1,10 @@
 package builder;
 
-import java.util.Observable;
-
 
 public class Main {
     public static void main(String[] args) {
 
-        User user = User.builder()
+        UserBuilderExample1 user = UserBuilderExample1.builder()
                 .name("Davit")
                 .surname("Nazaryan")
                 .email("davit@mail.ru")
@@ -16,6 +14,15 @@ public class Main {
                 .build();
 
         System.out.println(user.toString());
+
+       UserBuilderExample2 user2 = UserBuilderExample2.newBuilder()
+               .name("Davit")
+               .surName("Nazaryan")
+               .country("Armenia")
+               .city("Maralik")
+               .build();
+
+        System.out.println(user2.toString());
 
     }
 }

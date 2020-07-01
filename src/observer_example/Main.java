@@ -1,6 +1,4 @@
 package observer_example;
-
-import jdk.internal.util.xml.impl.Input;
 import observer_example.clients.Client1;
 import observer_example.clients.Client2;
 import observer_example.clients.Client3;

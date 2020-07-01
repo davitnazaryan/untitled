@@ -1,7 +1,5 @@
 package observer_example.observable;
-
 import observer_example.observer.MyObserver;
-
 import java.util.Vector;
 
 public class MyObservable {

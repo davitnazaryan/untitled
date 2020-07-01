@@ -1,6 +1,6 @@
 package builder;
 
-public class User {
+public class UserBuilderExample1 {
     private final String name;
     private final String surname;
     private final String email;
@@ -8,7 +8,7 @@ public class User {
     private final String city;
     private final int age;
 
-    private User(UserBuilder userBuilder) {
+    private UserBuilderExample1(UserBuilder userBuilder) {
         this.name = userBuilder.name;
         this.surname = userBuilder.surname;
         this.email = userBuilder.email;
@@ -19,7 +19,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "builder.User{" +
+        return "builder.UserBuilderExample1{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +
@@ -34,7 +34,7 @@ public class User {
     }
 
 
-    public static class UserBuilder {
+   public static class UserBuilder {
         private String name;
         private String surname;
         private String email;
@@ -72,8 +72,8 @@ public class User {
             return this;
         }
 
-        public User build() {
-            return new User(this);
+        public UserBuilderExample1 build() {
+            return new UserBuilderExample1(this);
         }
     }
 }
